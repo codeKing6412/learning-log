@@ -12,15 +12,15 @@ void InitBoard(char board[ROW][COL], int row, int col)
 		}
 	}
 }
-//第一个版本（不能应全变）
+//绗竴涓増鏈紙涓嶈兘搴斿叏鍙橈級
 //void DisplayBoard(char board[ROW][COL], int row, int col)
 //{
 //	int i = 0;
 //	for (i = 0; i < row; i++)
 //	{
-//		//打印数据
+//		//鎵撳嵃鏁版嵁
 //		printf(" %c | %c | %c \n", board[i][0], board[i][1], board[i][2]);
-//		//打印分割信息
+//		//鎵撳嵃鍒嗗壊淇℃伅
 //		if (i < row - 1)
 //			printf("---|---|---\n");
 //	}
@@ -30,7 +30,7 @@ void DisplayBoard(char board[ROW][COL], int row, int col)
 	int i = 0;
 	for (i = 0; i < row; i++)
 	{
-		//打印数据
+		//鎵撳嵃鏁版嵁
 		//printf(" %c | %c | %c \n", board[i][0], board[i][1], board[i][2]);
 		int j = 0;
 		for (j = 0; j < col; j++)
@@ -40,7 +40,7 @@ void DisplayBoard(char board[ROW][COL], int row, int col)
 			printf("|");
 		}
 		printf("\n");
-		//打印分割信息
+		//鎵撳嵃鍒嗗壊淇℃伅
 		if (i < row - 1)
 			//printf("---|---|---\n");
 		{
