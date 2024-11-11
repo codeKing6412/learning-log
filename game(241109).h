@@ -1,7 +1,7 @@
 #pragma once
-//ÓÎÏ·´úÂëµÄÉùÃ÷£¨º¯ÊıÉùÃ÷£¬·ûºÅ¶¨Òå£©
+//æ¸¸æˆä»£ç çš„å£°æ˜ï¼ˆå‡½æ•°å£°æ˜ï¼Œç¬¦å·å®šä¹‰ï¼‰
 #include<stdio.h>
 #define ROW 10
 #define COL 10
-//³õÊ¼»¯ÆåÅÌ
+//åˆå§‹åŒ–æ£‹ç›˜
 void InitBoard(char board[ROW][COL], int row, int col);
