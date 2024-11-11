@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
-//²âÊÔÓÎÏ·µÄÂß¼­
-//ÓÎÏ·´úÂëµÄÊµÏÖ
+//æµ‹è¯•æ¸¸æˆçš„é€»è¾‘
+//æ¸¸æˆä»£ç çš„å®ç°
 #include "game.h"
 void menu()
 {
@@ -11,7 +11,7 @@ void menu()
 void game()
 {
 	char board[ROW][COL] = { 0 };
-	//³õÊ¼»¯ÆåÅÌµÄº¯Êı
+	//åˆå§‹åŒ–æ£‹ç›˜çš„å‡½æ•°
 	InitBoard(board,ROW,COL);
 	DisplayBoard(board,ROW,COL);
 }
@@ -21,7 +21,7 @@ int main()
 	do
 	{
 		menu();
-		printf("ÇëÑ¡Ôñ:>");
+		printf("è¯·é€‰æ‹©:>");
 		scanf("%d", &input);
 		switch (input)
 		{
@@ -29,10 +29,10 @@ int main()
 			game();
 			break;
 		case 0:
-			printf("ÍË³öÓÎÏ·");
+			printf("é€€å‡ºæ¸¸æˆ");
 			break;
 		default:
-			printf("Ñ¡Ôñ´íÎó");
+			printf("é€‰æ‹©é”™è¯¯");
 			break;
 		}
 	} while (input);
