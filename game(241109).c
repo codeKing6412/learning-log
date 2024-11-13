@@ -51,7 +51,54 @@ void DisplayBoard(char board[ROW][COL], int row, int col)
 				if (j < col - 1)
 					printf("|");
 			}
-			printf("\n");
+			printf("\n"); 
 		}
 	}
+}
+void PlayerMove(char board[ROW][COL], int row, int col)
+{
+	int x = 0;
+	int y = 0;
+	printf("玩家请输入:>\n");
+	printf("请输入坐标:>");
+	while (1)
+	{
+		scanf("%d %d", &x, &y);
+		//坐标范围合法判断
+		if (x >= 1 && x <= row, y >= 1 && y <= col)
+		{
+			if (board[x - 1][y - 1] == ' ')
+			{
+				board[x - 1][y - 1] = '*';
+				break;
+			}
+			else
+			{
+				printf("坐标被占用,请选择其他位置\n");
+			}
+		}
+		else
+		{
+			printf("输入非法，请重新输入");
+		}
+	}
+}
+void ComputerMove(char board[ROW][COL], int row, int col)
+{
+	printf("电脑下棋:>\n");
+	int x = 0;
+	int y = 0;
+	x = rand() % row;
+	y = rand() % col;
+	while (1)
+	{
+		if (board[x][y] == ' ')
+		{
+			board[x][y] = '$';
+			break;
+		}
+	
+	}
+
+
 }
