@@ -14,9 +14,20 @@ void game()
 	//初始化棋盘的函数
 	InitBoard(board,ROW,COL);
 	DisplayBoard(board,ROW,COL);
+	//玩家下棋
+	while (1)
+	{
+		PlayerMove(board,ROW,COL);
+		DisplayBoard(board, ROW, COL);
+		//判断输赢
+		ComputerMove(board, ROW, COL);
+		DisplayBoard(board, ROW, COL);
+		//判断输赢
+	}
 }
 int main()
 {
+	srand((unsigned int) time(NULL));//设置随机数生成的起点
 	int input = 0;
 	do
 	{
